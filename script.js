@@ -204,6 +204,6 @@ function updateClock() {
   };
   
   // Log validation results when dev tools are opened (optional)
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Profile Card ready. Run profileCard.logValidation() to test.');
-  }
+ if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+console.log('Profile Card ready. Run profileCard.logValidation() to test.');
+   }
